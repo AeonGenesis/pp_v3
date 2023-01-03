@@ -7,7 +7,7 @@ public class binarySearch {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] array;
 
-        do { // input validity: Ganzzahl groesser als 5
+        do { // input validity: Ganzzahl groesser als 6
             System.out.println("Wie viele Woerter sollen im Array gespeichert werden?");
             try {
                 arraySize = Integer.parseInt(reader.readLine()); // Indexgrösse von Array bestimmen
