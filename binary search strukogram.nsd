@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-11" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" includeList="binarySearch" namespace="binarySearch" author="aeong" created="2023-01-03" changedby="aeong" changed="2023-01-03" origin="Structorizer 3.32-11 / JavaParser: &#34;C:\Users\aeong\Documents\GitHub\pp_v3\pp_v3\binarySearch.java&#34;" text="&#34;main&#34;" comment="&#34;METHOD for class binarySearch&#34;,&#34;public static&#34;,&#34;==== throws IOException, NumberFormatException&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<repeat text="&#34;Solange Eingabe kleiner als 6&#34;" comment="" color="ffffff" disabled="0">
+			<qRepeat>
+				<instruction text="&#34;&#34;&#34;Wie viele Woerter sollen im Array gespeichert werden?&#34;&#34;&#34;" comment="&#34;Eingabeaufforderung&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Eingabeformat überprüfen&#34;" comment="&#34;Falls invalide Eingabe, Aufforderung wiederholen&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qRepeat>
+		</repeat>
+		<instruction text="&#34;Array mit eingegebener Anzahl an elementen generieren&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<for text="&#34;Solange i kleiner als Anzahl Arrayelemente - 1&#34;" comment="" counterVar="dummy_counter" startValue="Solange i kleiner als Anzahl Arrayelemente - 1" stepConst="1" style="FREETEXT" color="ffffff" disabled="0">
+			<qFor>
+				<instruction text="&#34; &#34;&#34;Eingabe Wort an IndexStelle &#34;&#34;&#34;" comment="&#34;Eingabeaufforderung&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Eingabe an Stelle i von Array speichern&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;i um 1 erhöhen&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFor>
+		</for>
+		<repeat text="&#34;Wiederholen falls Antwort &#34;&#34;Ja&#34;&#34;. Abbrechen, falls andere Antwort.&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qRepeat>
+				<instruction text="&#34; &#34;&#34;Nach welchem Wort soll gesucht werden?&#34;&#34;&#34;" comment="&#34;Eingabeaufforderung&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Suchbegriff eingeben&#34;" comment="&#34;&#34;" color="e0ffe0" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;linke Grenze = 0&#34;,&#34;Rechte Grenze = Arrayelemente - 1&#34;" comment="&#34;Suchbereich festlegen&#34;" color="e0ffe0" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;boolean gefunden &#60;- false&#34;" comment="" color="e0ffe0" rotated="0" disabled="0"></instruction>
+				<while text="&#34;Wiederholen solange Linke Elementmenge kleiner/gleich rechte Elementmenge&#34;" comment="&#34;Solange Linke Elementmenge kleiner/gleich rechte Elementmenge&#34;" color="ffffff" disabled="0">
+					<qWhile>
+						<instruction text="&#34;Mittelwert berechnen nach der Formel: (links + (rechts - links) / 2)&#34;" comment="&#34;&#34;" color="e0ffe0" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;Element an Indexstelle des Mittelwerts mit Suchbegriff vergleichen&#34;" comment="&#34;&#34;" color="e0ffe0" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;Element (Mitte) ist gleich Suchbegriff&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;Wort gefunden an  Indexstelle + Mittelwert&#34;" comment="&#34;Ausgabe:&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;gefunden &#60;- true&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse color="ffffff">
+							</qFalse>
+						</alternative>
+						<alternative text="&#34;Wenn Suchbegriff groesser als Mittelwert (linke Hälfte ignorieren)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;Reche Seite durchsuchen (Linke Begrenzung = Mittelwert + 1)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;Linke Seite durchsuchen ( Rechte Begrenzung= Mittelwert -1)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qWhile>
+				</while>
+				<alternative text="&#34;NICHT gefunden&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;&#34;&#34;Nicht gefunden&#34;&#34;&#34;" comment="&#34;Ausgabe&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse color="ffffff">
+					</qFalse>
+				</alternative>
+				<instruction text="&#34; &#34;&#34;Noch eine suche?&#34;&#34;&#34;" comment="&#34;Eingabeaufforderung&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Antwort eingeben&#34;" comment="&#34;Eingabe&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qRepeat>
+		</repeat>
+	</children>
+</root>
