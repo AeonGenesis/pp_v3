@@ -16,23 +16,22 @@ public class FolgeZufallsZahl {
     }
 
     /*
-     * public static int formel(int a, int b, int z, int m) {// rekursiv
+     * Rekursiv methode
+     * 
+     * public static int formel(int a, int b, int z, int m) {
      * if (count < 20) {
-     * // System.out.println("n = " + count);
      * System.out.println(" Result: " + result);
      * result = (a * z + b) % m;
      * 
-     * // z = new Random().nextInt(2); // Zufallszahl zwischen 0 und 1
-     * // z = result;
+     * // z = new Random().nextInt(2); // Zufallszahl zwischen 0 und 1 //alte random
+     * methode
+     * // z = result; //ref
      * count++;
-     * // System.out.println("Count:" + count);
+     * System.out.println("Count:" + count); //Kontrollausgabe
      * System.out.println((count - 1) + ". Ergebnis: " + result);
      * formel(a, b, result, m);
-     *
      * }
-     * 
      * return -1;
-     * 
      * }
      */
 
