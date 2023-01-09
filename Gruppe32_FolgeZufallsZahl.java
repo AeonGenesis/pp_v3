@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class FolgeZufallsZahl {
+public class Gruppe32_FolgeZufallsZahl {
     public static int count = 0;
     public static int result = 0;
 
@@ -16,7 +16,7 @@ public class FolgeZufallsZahl {
     }
 
     /*
-     * Rekursiv methode
+     * Alternative: Rekursiv methode
      * 
      * public static int formel(int a, int b, int z, int m) {
      * if (count < 20) {

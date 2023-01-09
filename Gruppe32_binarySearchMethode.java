@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class binarySearchMethode {
+public class Gruppe32_binarySearchMethode {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static String[] array;
     static int arraySize;

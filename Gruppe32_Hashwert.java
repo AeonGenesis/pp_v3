@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Hashwert {
+public class Gruppe32_Hashwert {
     public static void main(String args[]) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("String Eingabe: ");

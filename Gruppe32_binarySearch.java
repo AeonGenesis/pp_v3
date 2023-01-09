@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class binarySearch {
+public class Gruppe32_binarySearch {
     static int arraySize;
 
     public static void main(String[] args) throws IOException, NumberFormatException {
